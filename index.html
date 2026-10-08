@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sokay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -21,7 +22,6 @@
             justify-content: center;
             align-items: center;
             padding: 40px 0 10px;
-            background-color: #F2C89B;
         }
 
         header img {
@@ -29,7 +29,6 @@
             width: 80%;
             height: auto;
             display: block;
-            mix-blend-mode: multiply;
         }
 
         main {
@@ -59,23 +58,23 @@
             object-fit: cover;
         }
 
-        /* ADD THE NEW CODE HERE */
         .memory-link {
             display: flex;
             justify-content: center;
             padding-bottom: 40px;
         }
+
         .memory-button {
             background-color: black;
             color: lightcyan;
-            border: none;
             border-radius: 10px;
             padding: 12px 24px;
             font-size: 1rem;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -89,10 +88,11 @@
     <div class="video-wrap">
         <video autoplay muted loop playsinline>
             <source src="Map.mp4" type="video/mp4">
-            <source src="Map.webm" type="video/webm">
         </video>
     </div>
-    <a href="21.09.26.html" class="memory-button">21.09.26</a>
-</a>
+
+    <div class="memory-link">
+        <a href="21.09.26.html" class="memory-button">21.09.26</a>
+    </div>
 </body>
 </html>
